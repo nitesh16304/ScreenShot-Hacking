@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Manager.master.cs" Inherits="Manager_Manager" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript" language="javascript">
+    function displayhand(obj)
+    {
+   document.getElementById(obj.id).style.cursor='hand';
+    }
+             
+    function redirect()
+    {
+    window.open("http://www.gmail.com");
+    }
+    </script>
+    
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 219px;
+        }
+        .style2
+        {
+            height: 70px;
+        }
+        .style3
+        {
+            height: 70px;
+            width: 126px;
+        }
+        .style4
+        {
+            width: 126px;
+            height: 347px;
+        }
+        .style5
+        {
+            height: 70px;
+            width: 997px;
+        }
+        .style6
+        {
+            width: 997px;
+            height: 347px;
+        }
+        .style7
+        {
+            height: 347px;
+        }
+        .style8
+        {
+            width: 100%;
+        }
+        </style>
+</head>
+<body background="../Images/background.jpg">
+    <form id="form1" runat="server">
+    <table class="style1">
+        <tr>
+            <td class="style3">
+                <img alt="manager" src="../Images/manager.jpg" 
+                    style="width: 168px; height: 88px" /></td>
+            <td class="style5">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LinkButton1" runat="server" BackColor="#FFFFCC" 
+                    Font-Bold="True" ForeColor="Red" onclick="LinkButton1_Click">ViewEmployees</asp:LinkButton>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LinkButton2" runat="server" BackColor="#FFFFCC" 
+                    Font-Bold="True" ForeColor="Red" onclick="LinkButton2_Click">ViewProjects</asp:LinkButton>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <a id="a1" onclick="redirect()" onmouseover="displayhand(this)" style="background-color:#FFFFCC;color:Red;font-weight:bold" > Check Mail</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LinkButton3" runat="server" BackColor="#FFFFCC" 
+                    Font-Bold="True" ForeColor="Red" onclick="LinkButton3_Click" 
+                    PostBackUrl="~/Login.aspx">SignOut</asp:LinkButton>
+                </td>
+            <td class="style2">
+                </td>
+        </tr>
+        <tr>
+            <td class="style4">
+                </td>
+            <td class="style6">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <table class="style8">
+                        <tr>
+                            <td>
+                                &nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &nbsp;</td>
+                        </tr>
+                    </table>
+                </asp:ContentPlaceHolder>
+                </td>
+            <td class="style7">
+                </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

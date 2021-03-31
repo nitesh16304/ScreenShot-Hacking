@@ -1,0 +1,126 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 100%;
+            background-image: url('../../Images/plain-wallpaper-123155.jpg');
+        }
+        .style3
+        {
+            width: 64px;
+        }
+        .style19
+        {
+            font-size: 60pt;
+        }
+        </style>
+</head>
+<body background="../Images/plain-wallpaper-123155.jpg" >
+
+    
+    
+        <form id="form1" runat="server">
+        <table class="style1">
+            <tr>
+                <td>
+&nbsp;<table class="style1">
+            <tr>
+                <td rowspan="2" style="font-style: italic">
+                    <table class="style1">
+                        <tr>
+                            <td class="style3">
+                                &nbsp;</td>
+                            <td>
+                <span class="style19">SCREEN SHOT HACKER</span>(WELLS FARGO)</td>
+                            <td>
+                                &nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:LinkButton ID="LinkButton1" runat="server" Font-Bold="True" 
+                        Font-Size="Larger" Height="23px" Width="117px" 
+                        onclick="LinkButton1_Click" CausesValidation="False" >EmployeesInfo</asp:LinkButton>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:LinkButton ID="LinkButton2" runat="server" Font-Bold="True" 
+                        Font-Size="Larger" onclick="LinkButton2_Click" CausesValidation="False">ProjectsInfo</asp:LinkButton>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:LinkButton 
+                        ID="btnassignemp" runat="server" Font-Bold="True" 
+                        Font-Size="Larger" onclick="LinkButton2_Click" 
+                        PostBackUrl="~/Admin/AssignEmp.aspx" CausesValidation="False">AssignEmployees</asp:LinkButton>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:LinkButton ID="btnassignproj" runat="server" Font-Bold="True" 
+                        Font-Size="Larger" onclick="LinkButton2_Click" 
+                        PostBackUrl="~/Admin/assignprojects.aspx" CausesValidation="False">AssignProjects</asp:LinkButton>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:LinkButton ID="LinkButton3" runat="server" Font-Bold="True" 
+                        Font-Size="Larger" ForeColor="Blue" onclick="LinkButton3_Click" 
+                        PostBackUrl="~/Login.aspx" CausesValidation="False">Logout</asp:LinkButton>
+                </td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+        </tr>
+    </table>
+
+    
+    
+        &nbsp;<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <table class="style2">
+            <tr>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+    </asp:ContentPlaceHolder>
+    
+</form>
+    
+</body>
+</html>
